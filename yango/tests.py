@@ -8,6 +8,7 @@ Replace this with more appropriate tests for your application.
 from django.test import TestCase
 """
 def primo(x):
+    numbers={}
     if x==1:
         return 1
     else:
