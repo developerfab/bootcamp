@@ -6,30 +6,27 @@ Replace this with more appropriate tests for your application.
 """
 
 from django.test import TestCase
-
-def fibo(x):
-    if x==1 or x==2:
-        return x
-    return fibo(x-1)+fibo(x-2)
-
-class FibonacciTest(TestCase):
-    def test_fibo_de_1_es_1(self):
-        """
-        Tests que prueba que fibo de 1 sea 1.
-        """
-        self.assertEqual(fibo(1), 1)
-
-    def test_fibo_de_2_es_2(self):
+"""
+def multiplos(lim):
+    x=1
+    sum=0
+    mult3=0
+    mult5=0
+    while mult3<lim:
+        sum=sum+mult3
+        mult3=3*x
+        x=x+1
+    x=1
+    while mult5<lim:
+        sum=sum+mult5
+        mult5=5*x
+        x=x+1
+    print sum
+    return sum
+"""
+class Multiplos(TestCase):
+    def test_suma_multiplos_3_y_5_de_10_es_23(self):
 	"""
-	Test que prueba que fibo de 2 sea 2
+	Test que prueba que la suma de las multiplos de 3 y 5 menores que 10 es 23
 	"""
-	self.assertEqual(fibo(2),2)
-
-    def test_fibo_de_3_es_3(self):
-	"""
-	Test que prueba que fibo de 3 sea 3
-	"""
-	self.asserEqual(fibo(3),3)
-
-    def test_fibo_n_es_la_suma_de_los_2_anterioes
-	self.asserEqual(fibo(10),89)
+	self.assertEqual(multiplos(10),23)
