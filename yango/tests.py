@@ -6,7 +6,7 @@ Replace this with more appropriate tests for your application.
 """
 
 from django.test import TestCase
-"""
+
 def multiplos(lim):
     x=1
     sum=0
@@ -23,7 +23,7 @@ def multiplos(lim):
         x=x+1
     print sum
     return sum
-"""
+
 class Multiplos(TestCase):
     def test_suma_multiplos_3_y_5_de_10_es_23(self):
 	"""
